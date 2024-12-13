@@ -1,0 +1,245 @@
+---
+title: "cartogram-e-gov-index-2024"
+author: "Luis Felipe Villota Macías"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Loading packages
+
+```{r warning=FALSE}
+library(tidyverse)
+library(skimr)
+library(sf)
+library(rnaturalearth)
+library(ggplot2)
+library(dplyr)
+library(cartogram)
+library(sp)
+library(raster)
+library(countrycode)
+library(ollamar)
+```
+
+# UN E-gov data
+
+```{r}
+
+raw_data <-read.csv("C:/Users/USER/Desktop/codebaker/all_r/pit-blog-entry/data/raw/EGOV_DATA_2024.csv")
+```
+
+# EDA
+
+```{r}
+skim(raw_data)
+colnames(raw_data)
+```
+
+# World map data
+
+```{r}
+# Load world map data
+world <- ne_countries(scale = "medium", returnclass = "sf")
+plot(world)
+```
+
+```{r}
+plot(ne_countries(country = "colombia", type= "map_units", scale = "medium"))
+
+
+# Download rivers
+rivers110 <- ne_download(scale = 10, type = "rivers_lake_centerlines", category = "physical", returnclass = "sf")
+
+# Download Colombia's boundary
+colombia <- ne_countries(scale = 10, country = "Colombia", returnclass = "sf")
+
+
+# Ensure the same CRS (coordinate reference system) for both datasets
+rivers110 <- st_transform(rivers110, st_crs(colombia))
+
+# Spatial filtering: keep only rivers within Colombia
+rivers_colombia <- st_intersection(rivers110, colombia)
+
+plot(st_geometry(colombia), col = "gray90", border = "black") # Colombia boundary
+plot(st_geometry(rivers_colombia), col = "blue", add = TRUE)  # Rivers
+
+
+```
+
+# Coordinates
+
+```{r}
+# Transform coordinates
+world_transformed <- st_transform(world, "+proj=kav7")
+plot(world_transformed)
+```
+
+# Country names: matching, cleaning and joining
+
+```{r}
+length(unique(raw_data$Country.Name)) # 193 countries
+length(unique(world$name)) # 242 countries
+
+# I had to manually correct the majority of country names in UN data to match naturalearth package sf data, it was faster although not desirable.
+
+working_data<-read.csv("C:/Users/USER/Desktop/codebaker/all_r/pit-blog-entry/data/working/EGOV_DATA_2024-country-name-check.csv")
+
+# Further cleaning spaces
+
+working_data$Country.Name <- str_trim(working_data$Country.Name, side = "both")
+
+```
+
+```{r}
+
+# Further standardizing country names after these stages
+
+unmatched_raw_to_world <- setdiff(working_data$Country.Name, world$name) # names not in world
+unmatched_world_to_raw <- setdiff(world$name, working_data$Country.Name) # names not in UN
+
+# Names not matched to be changed
+
+mapping <- data.frame(
+  UN_wrong_names = c("Antigua and Barbuda", 
+  "Bosnia and Herzegovina", 
+  "Central African Republic", 
+  "Democratic Republic of the Congo", 
+  "Dominican Republic", 
+  "Equatorial Guinea", 
+  "Ivory Coast", 
+  "Marshall Islands", 
+  "Federated States of Micronesia", 
+  "Republic of Moldova", 
+  "Saint Kitts and Nevis", 
+  "Saint Vincent and the Grenadines", 
+  "S\xe3o Tom\xe9 and Principe", 
+  "Solomon Islands", 
+  "South Sudan", 
+  "Syrian Arab Republic", 
+  "East Timor", 
+  "United Republic of Tanzania"),
+  world_correct_names = c(
+  "Antigua and Barb.", 
+  "Bosnia and Herz.", 
+  "Central African Rep.", 
+  "Dem. Rep. Congo", 
+  "Dominican Rep.", 
+  "Eq. Guinea", 
+  "Côte d'Ivoire", 
+  "Marshall Is.", 
+  "Micronesia", 
+  "Moldova", 
+  "St. Kitts and Nevis", 
+  "St. Vin. and Gren.", 
+  "São Tomé and Principe", 
+  "Solomon Is.", 
+  "S. Sudan", 
+  "Syria", 
+  "Timor-Leste", 
+  "Tanzania"))
+
+
+# Correct only the specified country names
+
+working_data_maravilha<- working_data %>%
+  mutate(Country.Name = ifelse(Country.Name %in% mapping$UN_wrong_names,
+                               mapping$world_correct_names[match(Country.Name, 
+                                                                 mapping$UN_wrong_names)], 
+                                                                            Country.Name))
+
+# Check the result
+head(working_data_maravilha)
+
+```
+
+# Final merge
+
+```{r}
+
+wegov <- world_transformed %>%
+  inner_join(working_data_maravilha , by = c("name" = "Country.Name"))
+
+```
+
+# Cartogram
+
+```{r}
+
+wegov_ok <- st_transform(wegov, "+proj=kav7")
+
+#wegov_ok <- st_simplify(wegov_ok, dTolerance = 0.01)
+
+
+cartogram <- cartogram_cont(wegov_ok, "pop_est", itermax = 20)
+```
+
+```{r}
+plot(st_geometry(cartogram))
+plot(cartogram)
+```
+
+```{r}
+ggplot(cartogram) +
+  geom_sf(aes(fill = `E.Government.Index`)) +
+  scale_fill_viridis_c() +
+  theme_minimal()
+```
+
+```{r}
+library(ggrepel)
+
+# First, identify the countries with max and min E-Government Index
+max_min_countries <- cartogram %>% 
+  filter(`E.Government.Index` == max(`E.Government.Index`, na.rm = TRUE) | 
+         `E.Government.Index` == min(`E.Government.Index`, na.rm = TRUE)) %>%
+  mutate(rank = ifelse(`E.Government.Index` == max(`E.Government.Index`, na.rm = TRUE), "#1", "#193"),
+         label = paste(sovereignt, rank, sep = "\n"))
+
+# Calculate the bounding box of the map
+bbox <- st_bbox(cartogram)
+
+carto_final <- ggplot() +
+  geom_sf(data = cartogram, aes(fill = `E.Government.Index`), color = "black", size = 0.2) +
+  scale_fill_viridis_c(
+    option = "plasma",
+    name = "E-Gov Index",
+    labels = scales::label_comma()
+  ) +
+  geom_point(data = max_min_countries, aes(geometry = geometry), stat = "sf_coordinates", 
+             color = "black", size = 2) +
+  geom_text_repel(data = max_min_countries,
+                  aes(label = label, geometry = geometry),
+                  stat = "sf_coordinates",
+                  size = 3, fontface = "bold",
+                  box.padding = 0.5,
+                  point.padding = 0.5,
+                  segment.color = "black",
+                  direction = "both",
+                  nudge_x = ifelse(max_min_countries$E.Government.Index == max(max_min_countries$E.Government.Index), 
+                                   0.15 * (bbox["xmax"] - bbox["xmin"]), 
+                                   -0.15 * (bbox["xmax"] - bbox["xmin"])),
+                  nudge_y = 0.15 * (bbox["ymax"] - bbox["ymin"])) +
+  labs(
+    title = "Índice de E-Government de Naciones Unidas para 193 países (2024)",
+    subtitle = "Distorción enfatizando la población estimada",
+    caption = "Elaboración propia con rnaturalearth. Proyección: Kavrayskiy VII. Fuente: United Nations - DESA - DPIDG - DPADM, 2024"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    plot.title = element_text(face = "bold", size = 16, hjust = 0.5),
+    plot.subtitle = element_text(size = 14, hjust = 0.5),
+    legend.position = "right",
+    legend.title = element_text(face = "bold"), 
+    panel.grid = element_blank()
+  )
+
+
+carto_final
+
+ggsave("carto_final.png", plot = carto_final, 
+       width = 12, height = 8, dpi = 300, units = "in")
+```
