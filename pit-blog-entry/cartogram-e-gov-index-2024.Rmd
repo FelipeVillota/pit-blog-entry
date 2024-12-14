@@ -23,6 +23,7 @@ library(sp)
 library(raster)
 library(countrycode)
 library(ollamar)
+library(ggrepel)
 ```
 
 # UN E-gov data
@@ -190,7 +191,6 @@ ggplot(cartogram) +
 ```
 
 ```{r}
-library(ggrepel)
 
 # First, identify the countries with max and min E-Government Index
 max_min_countries <- cartogram %>% 
