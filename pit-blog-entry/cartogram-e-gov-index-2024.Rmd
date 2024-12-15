@@ -24,6 +24,7 @@ library(raster)
 library(countrycode)
 library(ollamar)
 library(ggrepel)
+library(Amelia)
 ```
 
 # UN E-gov data
