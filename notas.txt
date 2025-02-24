@@ -1,0 +1,175 @@
+o, si se quiere girando entre las posibilidades de un slot machine de casino.
+
+● ¿Qué es la Tecnología de Interés Público (PIT) para ti?
+
+Un signo monstruoso que no pararía de cambiar de forma, tamaño, textura. 
+Si hiciese el letrero animado de una película llamada tecnología de interés público, pondría el término público como una palabra mutante. Un signo monstruoso que no pararía de cambiar de forma, tamaño, textura. Eso es PIT para mí, un conjunto de prácticas, técnicas y prestaciones al servicio de algo por definir.  
+
+Hoy en día, y en especial para regiones como Latinoamérica y el Caribe, 
+
+A medida que me integro a la red de consultoría PIT Policy Lab, enfocada en el desarrollo de América Latina y el Caribe (LAC), hay diversas formas de situar y aplicar la tecnología de interés público. Este enfoque abarca desde la generación de capacidades estatales para la mejora de servicios esenciales hasta 
+
+La tecnología de interés público. Una conceptualización para el ciudadano de a pie.
+Antes de habría que definir el interés público(Washington & Cheung, 2024). 
+A quién sirve, cuándo, por qué y bajo qué circunstancias. 
+
+(ibid). Éstos ha su vez han evolucionado y se han digitalizado.  Vivimos en una época – la era algorítmica, según varios académicos – caracterizada por grandes avances computacionales reflejados en capacidad de almacenaje, procesamiento y , entre otras.
+
+Es un concepto paraguas. Cubre un vasto espectro de las más innovadoras prácticas, técnicas y prestaciones al servicio de diferentes grupos humanos y bienes comunes. En medio de la dificultad de definir públicos y bienes, y efectivamente aportarle valor sin perjudicar significativamente a otros, TIP tiene una vocación inclusiva y no comercial (Washington & Cheung, 2024: 1).
+En su sentido más básico, se materializa en la transformación digital y actualización de las prácticas administrativas de los gobiernos Varios aspectos del llamado e-gov (gobierno electrónico).
+ (ibid). 
+Más allá de ser un término paraguas que representa un espectro de herramientas innovadoras al servicio de diversos públicos y bienes comunes, representa un paradigma transformador.
+
+# I had to manually correct some country names
+working_data<-read.csv("C:/Users/USER/Desktop/codebaker/all_r/pit-blog-entry/data/working/EGOV_DATA_2024-country-name-check.csv")
+
+en la fragua de Hefesto.
+
+Porque, en última instancia son vehículos para reducir asimetrías de poder. 
+
+
+"no comercial" significa que el desarrollo y la aplicación de la tecnología no están primordialmente motivados por el lucro o la ganancia económica, sino por Algunas características clave de lo "no comercial" incluyen:
+1.	Priorización del Impacto Social
+•	El objetivo principal es resolver problemas sociales
+•	Las ganancias económicas no son el motor principal del desarrollo
+•	Se busca generar valor para comunidades y grupos vulnerables
+2.	Modelo de Financiamiento
+•	Pueden provenir de: 
+o	Fondos públicos
+o	Donaciones
+o	Subvenciones académicas
+o	Financiamiento de organizaciones sin fines de lucro
+•	No buscan maximizar las ganancias de inversores privados
+3.	Accesibilidad
+•	Tecnologías diseñadas para ser: 
+o	De bajo costo
+o	Adaptables a diferentes contextos
+o	Disponibles para comunidades con recursos limitados
+4.	Transparencia
+•	Código abierto
+•	Procesos de desarrollo colaborativos
+•	Rendición de cuentas sobre el impacto social
+5.	Diferencia con Tecnología Comercial
+•	No busca crear productos para mercados masivos
+•	No depende de modelos de negocio tradicionales
+•	El éxito se mide por impacto social, no por rentabilidad
+Ejemplo: Un software para ayudar a comunidades rurales a gestionar recursos hídricos sería "no comercial", mientras que una aplicación de gestión de agua diseñada para vender a empresas de servicios públicos sería comercial.
+
+
+Debido al grado de desarrollo y poder computacional de las actuales herramientas, ahora más que nunca es clave entender las estructuras sociales para prever riesgos y aprovechar oportunidades.
+
+
+El desafío central de la TIP radica en su implementación ética. Definir qué constituye un "bien público" y cómo implementar tecnologías que realmente contribuyan sin generar efectos colaterales negativos requiere un equilibrio delicado. La transformación digital no puede ser un fin en sí misma, sino un medio para ampliar capacidades y derechos.
+
+En este panorama emerge la Tecnología de Interés Público (PIT, en inglés) 
+
+promete convertirse en una herramienta fundamental de transformación social.}
+
+La complejidad de este marco conceptual demanda un enfoque interdisciplinario que integre perspectivas tecnológicas, sociológicas, éticas y políticas. La TIP no es solo una tendencia, sino una necesidad para construir sociedades más equitativas e inteligentes en un mundo crecientemente digitalizado.
+
+Public interest technologists are professionals who want to signal their intention to develop noncommercial equitable computing projects. Public interest technology also functions as a form of critical inquiry that uncovers power, culture, and social aspects of computing. Understanding the inherent assumptions about public service is necessary to building public interest technology.
+
+En su esencia, la TIP trasciende la mera digitalización de procesos. Constituye una aproximación holística que busca comprender y servir a los grupos humanos mediante innovaciones tecnológicas con una marcada vocación inclusiva. Su desarrollo se ancla en la capacidad computacional actual, que permite analizar estructuras sociales con una profundidad y precisión sin precedentes.
+
+Las iniciativas pueden surgir desde lo privado y lo público. 
+
+Lo óptimo es que entre a más gente le sirva un desarrollo tecnológico – pues mejor. Es decir, existe una teoría del cambio en el que la inclusión es un vector de optimización. 
+
+el último signo fuera el que estaría parpadeando. 
+
+
+Si fuese conduciendo de noche por una carretera remota y, en el horizonte, viera un letrero de neón que dice “Tecnología de Interés Público” la palabra público aparecería y desaparecería, incluso cambiaría de color y forma. Sería un término mutante, siempre en transformación. 
+
+La definición de ese público no es sencillo, porque aún teniendo 
+
+de la tech for Good. 
+
+Como dijo el expresidente y Juan Manuel Santos, eSuficiente verdad, suficiente justicia.
+
+
+Esto elementos se operacionalizan en ambientes dinámicos donde se agrupan diversos actores y técnicas avanzadas orientadas a promover el bien común y a servir a grupos humanos particularmente marginados. 
+
+
+ Un poco infundidos con la llamada cultura de los hackers y los movimientos de open science pueden ser vistos como grandes exponentes de apertura. 
+
+tecnológicos desarrollados bajo la insignia de interés público 
+
+Existen culturas violentas, múltiples asimetrías de poder y hondas desigualdades sociales. 
+
+El desarrollo y uso de herramientas innovadoras han transformando nuestra comprensión de los procesos sociales y gubernamentales
+
+Pero la perspectiva PIT va incluso más allá de una profunda actualización de las administraciones públicas. Implica una transformación radical en cómo concebimos el poder, la participación ciudadana y el desarrollo social. 
+
+
+Aunque hay varios jugadores en el arenero PIT, y sus horizontes se expanden mucho más allá de meras actualizaciones de sistemas operativos de las burocracias, las administraciones públicas son en última instancia las garantes de derechos y servicios para la ciudadanía, además de monopolizar el uso de la fuerza. Por lo tanto, su evolución tecnológico es fundamental Pero la perspectiva PIT va incluso más allá de una profunda actualización de las administraciones públicas. Implica una transformación radical en cómo concebimos el poder, la participación ciudadana y el desarrollo social.
+
+
+
+Pienso que es importante desarrollar proyectos 
+su equiparación con campos como el derecho de interés público, donde la tecnología se convierte en un medio para garantizar derechos y promover la equidad.
+
+Más específicamente en su uso para la paz y seguridad En mi caso, pienso que es una 
+
+
+gran oportunidad Creo que no sólo tiene el potencial de impulsar transformación digital y actualización de las prácticas administrativas de los gobiernos sino cambiar paradigmas en lo que se refiere a los conflictos en las sociedades. creo que hacer avances en reducir violencias permite luego atender realmente los problemas más profundos de nuestros grupos humanos.
+
+
+● ¿Por qué te consideras una persona tecnóloga de interés público? ¿Cuál es la importancia del área de tu expertise? Puedes proporcionarnos un
+ejemplo contándonos sobre algún proyecto vigente en el que participas,
+experiencias previas u otro(s) caso(s) de éxito que conozcas.
+
+
+
+● ¿Qué sugerencias tienes para avanzar en el tema? Expón algunas de tus
+reflexiones sobre cómo podemos poner la tecnología al servicio del bien
+común a través de la colaboración y la formulación de políticas públicas.
+
+
+Es fundamental la agencia y entramiento de el teconologist de intrres público. 
+
+
+Vivimos en los años 20s del siglo XXI. Son tiempos veraniegos para las máquinas. O por lo menos, eso parece. Las transformaciones en las capacidades de almacenamiento, generación y procesamiento de información de los sistemas con barreras de operación más asequibles hacen posible avances de aplicaciones computacionales disruptivas [3]. 
+
+
+Vivimos en los años 20s del siglo XXI. Son tiempos veraniegos para las máquinas. O por lo menos, eso parece. 
+
+Al ser las administraciones públicas garantes en última instancia de derechos, deberes y servicios públicos. El gobierno electrónico y campos adyacentes como la tecnología cívica son grandes aristas de desarrollo social acompasado por la tecnología [4].
+
+
+Los gobiernos –se han ido sofisticando y optimizando sus actividades hacia el gobierno electrónico. Evolucionando desde de la acumulación de– hoy digitalizada – y aumentando capacidades de su almacenamiento y procesamiento, entre otras cosas (ibid). 
+
+
+Aunque se han conquistado grandes logros en materia de servicios públicos con procesos administrativos más transparentes, eficientes y accesibles; también es cierto que estamos lejos de aprovechar el potencial tecnológico para el desarrollo e innovación social debido a una compleja interacción de 
+
+
+el gobierno electrónico y campos adyacentes como la tecnología cívica emergen como pilares fundamentales para transformar la gestión pública, 
+
+
+factores técnicos, institucionales y organizativos. En este trayecto, las administraciones públicas han generado involuntariamente, arrastrando errores históricos de clasificación, categorización y distribución de recursos que perpetúan dinámicas de exclusión digital y marginalización de grupos vulnerables.
+ Sin embargo, esta transformación, aunque prometedora, enfrenta desafíos significativos.
+Históricamente, los sistemas de cuantificación han sido esenciales para ordenar y comprender las sociedades, sirviendo como base para estructurar políticas públicas y evaluar su impacto. La digitalización ha potenciado estas capacidades, pero su implementación aún no ha alcanzado su máximo potencial debido a la resistencia al cambio, la persistencia de sistemas obsoletos y las brechas en competencias digitales. Además, existe el riesgo de que la digitalización perpetúe desigualdades, excluyendo a grupos vulnerables y replicando sesgos históricos presentes en los datos y los algoritmos.
+Para avanzar hacia un modelo inclusivo de gobierno electrónico, resulta imprescindible adoptar un enfoque centrado en el usuario, que priorice las necesidades de todos los ciudadanos, especialmente los más desfavorecidos. Esto requiere realizar auditorías de algoritmos para garantizar la equidad en los sistemas automatizados, invertir en programas de capacitación digital para cerrar brechas de competencias y establecer un marco regulatorio robusto que proteja la privacidad y garantice la justicia en el uso de datos.
+La clave para superar estos desafíos radica en la colaboración efectiva entre los gobiernos, el sector privado y la sociedad civil. Este enfoque tripartito permitirá diseñar e implementar soluciones tecnológicas que no solo modernicen la administración pública, sino que también promuevan un desarrollo social equitativo y sostenible, alineado con los principios de justicia y universalidad.
+
+
+ha transformado la administración pública, mejorando la eficiencia y la transparencia en la prestación de servicios. Sin embargo, su potencial para promover el desarrollo social aún no se ha aprovechado plenamente debido a desafíos como la resistencia al cambio, sistemas obsoletos y brechas de competencias. Además, la digitalización puede perpetuar desigualdades, excluyendo a grupos vulnerables y replicando sesgos históricos. Para avanzar hacia un gobierno electrónico inclusivo, es fundamental adoptar un diseño centrado en el usuario, realizar auditorías de algoritmos, invertir en capacitación digital y establecer un marco regulatorio robusto que garantice equidad y protección de datos. La colaboración entre el gobierno, el sector privado y la sociedad civil es esencial para abordar estos desafíos de manera efectiva.
+
+
+De esta manera, sus propuestas implican necesariamente premisas y supuestos clave sobre el cambio social, entre los que se encuentra el que, si se atiende a un problema de una minoría, al final tiene efectos positivos para el resto de la población (ej. rampas de acceso a lugares públicos para personas que usan silla de ruedas beneficia a viajeros con maletas) (ibid).
+
+
+Con antiguas raíces en las diferente culturas humanas. (ej. open science, open source tech y data, crowdsourcing, crowdsensing).a reducir la volatilidad social para luego
+
+Habitamos cada vez más tiempos y espacios algorítmicos.de los sistemas, y una narrativa tecnológica que simultanea la promesa redentora con la amenaza de una opacidad irreductible. 
+
+El potencial de las PIT es verdaderamente inmenso. Los sistemas actuales tienen la capacidad de analizar estructuras sociales con una profundidad y precisión sin precedentes, identificando necesidades complejas y diseñando soluciones adaptadas a contextos específicos. 
+
+La verdadera revolución está en concebir la tecnología no como un instrumento de control, sino como una herramienta de empoderamiento ciudadano, lo que requiere un enfoque ético y estratégico.
+
+Sin embargo, el desafío radica en la dificultad de definir con precisión los públicos objetivo y los bienes a proporcionar, así como en aportar valor sin perjudicar significativamente a otros. 
+
+demás, es necesario abordar los desafíos persistentes de definir qué es lo público y evaluar quién gana y quién pierde con las diferentes implementaciones. 
+
+
+
+
